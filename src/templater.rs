@@ -90,6 +90,13 @@ fn eval_expression(expr: &str, state: &mut ExprState, (lc, cc): (usize, usize)) 
                 exit(1);
             }
         },
+        ["if", var, "is", val, ..] => {
+            if state.variables.get(var) == Some(&val.to_string()) {
+                args[4..].join(" ").to_string()
+            } else {
+                String::new()
+            }
+        },
         _ => {
             println!("Error ({}:{}): Undefined expression '{}'", lc + 1, cc + 1, expr);
             exit(1);
