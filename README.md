@@ -26,9 +26,9 @@ The variable foo is Hello, world!
 
 ## Syntax
 Here's a quick cheatsheet, until there is a proper wiki.
-| Syntax               | Description           |
-| -------------------- | --------------------- |
-| {# ... #}            | Comment               |
-| \{ hello \}          | Escapes               |
-| { foo }              | Referencing variables |
-| { define foo Hello } | Defining variables    |
+| Syntax                 | Description           |
+| ---------------------- | --------------------- |
+| {# ... #}              | Comment               |
+| \\{ hello \\}          | Escapes               |
+| { foo }                | Referencing variables |
+| { define foo Hello }   | Defining variables    |
